@@ -43,7 +43,7 @@ int main () {
   int N_ensemble = 1000, Ncopies = 3, dimH = 2, Ntraj = 7;
   bool printTraj = true;
 
-  qubit_roqj jump(N_ensemble, tmin, tmax, dt, Ncopies, printTraj, Ntraj, true, 1e-2);
+  qubit_roqj jump(N_ensemble, tmin, tmax, dt, Ncopies, printTraj, Ntraj);
 
   Vector2cd initialState = .9*excited_state - .5*ground_state;
   jump.set_initial_state(initialState);
