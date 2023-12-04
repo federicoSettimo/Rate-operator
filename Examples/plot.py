@@ -38,7 +38,7 @@ if print_traj == True:
     for i in range(Ntraj):
         plt.plot(t, trajectories[i,:], alpha=.1)
 plt.plot(t,exact,color='black', label="Exact")
-err_every = int(Npoints/20)
+err_every = int(Npoints/30)
 plt.errorbar(t,avg_obs,err_obs, marker='o', markersize=3, color='red', label="Average", errorevery=err_every, markevery=err_every, linewidth=0, elinewidth=1)
 
 plt.legend(loc="upper left")
